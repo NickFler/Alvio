@@ -521,24 +521,37 @@ label {
 }
 }
 @media (max-width: 768px) {
-    label {
+     label {
         display: block;
         position: absolute;
     right: 0;
     }
-
-    .nav__ul {
+.header {
+    
+    height: 250px;
+}
+    .header__nav {
         display: block;
         position: fixed;
         top: 0;
         left: 0;
-        width: 100%;
-        height: 100%;
+        width: 200px;
+        height: 200px;
         background: var(--color-main);
-        transform: translateX(-200%)
+        transform: translateX(-200%);
+        transition-duration: .4s;
+        
     }
-
-    #check-menu:checked~.nav__ul {
+    .nav__ul {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        align-items: normal;
+    }
+.nav__a {
+    color: var(--color-white);
+}
+    input:checked~.header__nav{
         transform: translateX(0)
     }
 }
