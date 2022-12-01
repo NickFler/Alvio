@@ -554,6 +554,30 @@ label {
     input:checked~.header__nav{
         transform: translateX(0)
     }
+    
+}
+@media (max-width: 576px) {
+    .header {
+        min-width: 744px;
+    }
+    label {
+       
+        right: -124px;
+    }
+    .footer {
+        min-width: 744px;
+        padding: 95px 18px;
+    }
+    .footer__logo {
+        margin-bottom: 35px;
+    }
+    .footer__pd-x {
+        padding: 0;
+    }
+    .footer__nav {
+        display: flex;
+        gap: 80px;
+    }
 }
 
 
